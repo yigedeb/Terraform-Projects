@@ -16,7 +16,7 @@ resource "azurerm_kubernetes_cluster" "CloudSkillsAKS" {
   name                = var.Name
   location            = var.location
   resource_group_name = var.resourceGroup
-  dns_prefix          = "cloudskillsprefix"
+  dns_prefix          = "yigaksprefix"
 
   default_node_pool {
     name = "default"
