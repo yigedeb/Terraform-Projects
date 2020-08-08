@@ -1,7 +1,7 @@
 terraform {
   backend "azurerm" {
-    resource_group_name = "yig-rg"
-    storage_account_name = "yigtfstate"
+    resource_group_name = "yig-west"
+    storage_account_name = "yigtfstatew"
     container_name = "tfstate"
     key = "terraform.state"
   }
