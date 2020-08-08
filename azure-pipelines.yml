@@ -10,7 +10,7 @@ steps:
     provider: 'azurerm'
     command: 'init'
     workingDirectory: '12-CI-CD-Pipelines/Azure-Devops/AKS/'
-    commandOptions: '-var="Name=$(Name)" -var="resourceGroup=$(resourceGroup)" -var="clientID=$(clientID)" -var="clientSecret=$(clientSecret)" -var="location=$(location)")'
+    commandOptions: '-var="Name=$(Name)" -var="resourceGroup=$(resourceGroup)" -var="clientID=$(clientID)" -var="clientSecret=$(clientSecret)" -var="location=$(location)"'
     backendServiceArm: 'Azure subscription 1(ad111019-ab43-4c2e-a573-62bf5b6ce7a0)'
     backendAzureRmResourceGroupName: 'yig-rg'
     backendAzureRmStorageAccountName: 'yigtfstate'
