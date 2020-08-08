@@ -10,11 +10,11 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'init'
-    workingDirectory: '12-CI-CD-Pipelines/Azure-Devops/AKS'
-    commandOptions: '-var="Name=$(Name)" -var="resourceGroup=$(resourceGroup)" -var="clientID=$(clientID)" -var="clientSecret=$(clientSecret)" -var="location=$(location)"'
-    backendServiceArm: 'Mike-Pay-As-You-Go (220284d2-6a19-4781-87f8-5c564ec4fec9)'
-    backendAzureRmResourceGroupName: 'Dev10'
-    backendAzureRmStorageAccountName: 'cloudskillstfstate92'
+    workingDirectory: '12-CI-CD-Pipelines/Azure-Devops/AKS/'
+    commandOptions: '-var="Name=$(Name)" -var="resourceGroup=$(resourceGroup)" -var="clientID=$(clientID)" -var="clientSecret=$(clientSecret)" -var="location=$(location)")'
+    backendServiceArm: 'Azure subscription 1(ad111019-ab43-4c2e-a573-62bf5b6ce7a0)'
+    backendAzureRmResourceGroupName: 'yig-rg'
+    backendAzureRmStorageAccountName: 'yigtfstate'
     backendAzureRmContainerName: 'tfstate'
     backendAzureRmKey: 'tf/terraform.tfstate'
 
@@ -22,6 +22,6 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'apply'
-    workingDirectory: '12-CI-CD-Pipelines/Azure-Devops/AKS'
-    commandOptions: '-var="Name=$(Name)" -var="resourceGroup=$(resourceGroup)" -var="clientID=$(clientID)" -var="clientSecret=$(clientSecret)" -var="location=$(location)"'
-    environmentServiceNameAzureRM: 'Mike-Pay-As-You-Go (220284d2-6a19-4781-87f8-5c564ec4fec9)'
+    workingDirectory: '12-CI-CD-Pipelines/Azure-Devops/AKS/'
+    commandOptions: '-var="Name=$(Name)" -var="resourceGroup=$(resourceGroup)" -var="clientID=$(clientID)" -var="clientSecret=$(clientSecret)" -var="location=$(location)")'
+    environmentServiceNameAzureRM: 'Azure subscription 1(ad111019-ab43-4c2e-a573-62bf5b6ce7a0)'
