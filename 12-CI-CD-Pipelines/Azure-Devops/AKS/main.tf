@@ -1,14 +1,14 @@
 terraform {
   backend "azurerm" {
-    resource_group_name = "Dev10"
-    storage_account_name = "cloudskillstfstate92"
+    resource_group_name = "yig-rg"
+    storage_account_name = "yigtfstate"
     container_name = "tfstate"
     key = "terraform.state"
   }
 }
 
 provider azurerm {
-  version = "2.0.0"
+   version = "=2.20.0"
   features {}
 }
 
