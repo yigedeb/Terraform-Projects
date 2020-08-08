@@ -16,12 +16,12 @@ resource "azurerm_kubernetes_cluster" "CloudSkillsAKS" {
   name                = var.Name
   location            = var.location
   resource_group_name = var.resourceGroup
-  dns_prefix          = "yigaksprefix"
+  dns_prefix          = "dnsyigaksprefix"
 
   default_node_pool {
     name = "default"
     node_count = 1
-    vm_size = "Standard_D2_v2"
+    vm_size = "Standard_D2s_v3"
   }
   service_principal {
     client_id     = var.clientID
